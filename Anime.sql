@@ -1,3 +1,16 @@
+--First I have to have access to DBA to create users
+--Creating users will create a new database
+
+--Create user and make new database
+CREATE USER media_db IDENTIFIED BY p4ssw0rd;
+
+--Must Grant new user permissions
+GRANT CONNECT, RESOURCE TO media_db;
+
+--Run script vs Run Statement
+--Green Plus to connect to that new database/user
+--switch to media_db
+
 CREATE TABLE ANIME (
   a_id INTEGER,
   a_name VARCHAR2(50),
